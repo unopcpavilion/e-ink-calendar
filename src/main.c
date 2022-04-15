@@ -92,7 +92,7 @@ int drawWindow(void){
 //    Paint_DrawNum(10, 33, 123456789, &Font12, BLACK, WHITE);
 //    Paint_DrawNum(10, 50, 987654321, &Font16, WHITE, BLACK);
 
-    Paint_DrawRectangle(0, 0, 800, 400, BLACK, DOT_PIXEL_8X8, LINE_STYLE_SOLID);
+    Paint_DrawRectangle(5, 5, EPD_7IN5_V2_WIDTH-10, EPD_7IN5_V2_HEIGHT-10, BLACK, DOT_PIXEL_8X8, LINE_STYLE_SOLID);
 
     printf("EPD_Display\r\n");
     EPD_7IN5_V2_Display(BlackImage);
