@@ -98,10 +98,10 @@ int drawWindow(void){
     EPD_7IN5_V2_Display(BlackImage);
     DEV_Delay_ms(2000);
 
-
-    printf("EPD_Display\r\n");
-    EPD_7IN5_V2_Display(BlackImage);
-    DEV_Delay_ms(2000);
+//
+//    printf("EPD_Display\r\n");
+//    EPD_7IN5_V2_Display(BlackImage);
+//    DEV_Delay_ms(2000);
 
 //    printf("Clear...\r\n");
 //    EPD_7IN5_V2_Clear();
