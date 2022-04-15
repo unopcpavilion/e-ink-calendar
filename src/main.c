@@ -5,7 +5,7 @@
 #include "EPD_7in5_V2.h"
 #include <time.h>
 
-void drawWindow(void);
+int drawWindow(void);
 
 void  Handler(int signo)
 {
