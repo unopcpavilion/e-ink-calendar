@@ -105,7 +105,7 @@ int drawWindow(void){
 
 //    printf("Clear...\r\n");
 //    EPD_7IN5_V2_Clear();
-1
+
     printf("Goto Sleep...\r\n");
     EPD_7IN5_V2_Sleep();
     free(BlackImage);
