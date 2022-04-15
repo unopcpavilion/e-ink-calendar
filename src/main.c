@@ -94,7 +94,7 @@ int drawWindow(void){
     printf("show window BMP-----------------\r\n");
     Paint_SelectImage(BlackImage);
     Paint_Clear(WHITE);
-    GUI_ReadBmp("./pic/out2.bmp", 0, 0);
+    GUI_ReadBmp("./pic/aple.bmp", 0, 0);
     EPD_7IN5_V2_Display(BlackImage);
     DEV_Delay_ms(2000);
 
