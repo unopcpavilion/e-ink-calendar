@@ -21,7 +21,7 @@ int main(void)
     // Exception handling:ctrl + c
     signal(SIGINT, Handler);
 
-  return  drawWindow();
+    drawWindow();
 
 	// 	For Test
     // if(DEV_Module_Init()!=0){
@@ -33,7 +33,7 @@ int main(void)
 	// }
 	// DEV_Module_Exit();
 	//
-    // return 0;
+     return 0;
 }
 
 void drawWindow(void){
