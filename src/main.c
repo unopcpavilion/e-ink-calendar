@@ -36,7 +36,7 @@ int main(void)
      return 0;
 }
 
-void drawWindow(void){
+int drawWindow(void){
     printf("EPD_7IN5_V2_test Demo\r\n");
     if(DEV_Module_Init()!=0){
         return -1;
@@ -69,6 +69,9 @@ void drawWindow(void){
 //    Paint_Clear(WHITE);
 
     // 2.Drawing on the image
+    printf("%d",EPD_7IN5_V2_WIDTH);
+    printf("%d",EPD_7IN5_V2_HEIGHT);
+
     printf("Drawing:BlackImage\r\n");
     Paint_DrawPoint(10, 80, BLACK, DOT_PIXEL_1X1, DOT_STYLE_DFT);
     Paint_DrawPoint(10, 90, BLACK, DOT_PIXEL_2X2, DOT_STYLE_DFT);
