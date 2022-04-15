@@ -63,6 +63,21 @@ void drawWindow(void){
     printf("Paint_NewImage\r\n");
     Paint_NewImage(BlackImage, EPD_7IN5_V2_WIDTH, EPD_7IN5_V2_HEIGHT, 0, WHITE);
 
+    printf("show window BMP-----------------\r\n");
+    Paint_SelectImage(BlackImage);
+    Paint_Clear(WHITE);
+    GUI_ReadBmp("./pic/800x480.bmp", 0, 0);
+    EPD_7IN5_V2_Display(BlackImage);
+    DEV_Delay_ms(2000);
+
+    printf("show bmp------------------------\r\n");
+    Paint_SelectImage(BlackImage);
+    Paint_Clear(WHITE);
+    GUI_ReadBmp("./pic/100x100.bmp", 0, 0);
+    EPD_7IN5_V2_Display(BlackImage);
+    DEV_Delay_ms(2000);
+
+
 //    printf("Clear...\r\n");
 //    EPD_7IN5_V2_Clear();
 
