@@ -66,8 +66,8 @@ void drawWindow(void){
 //    printf("Clear...\r\n");
 //    EPD_7IN5_V2_Clear();
 
-    printf("Goto Sleep...\r\n");
-    EPD_7IN5_V2_Sleep();
+//    printf("Goto Sleep...\r\n");
+//    EPD_7IN5_V2_Sleep();
 //    free(BlackImage);
 //    BlackImage = NULL;
     DEV_Delay_ms(2000);//important, at least 2s
