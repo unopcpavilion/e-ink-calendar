@@ -69,8 +69,8 @@ int drawWindow(void){
 //    Paint_Clear(WHITE);
 
     // 2.Drawing on the image
-    printf("%d",EPD_7IN5_V2_WIDTH);
-    printf("%d",EPD_7IN5_V2_HEIGHT);
+    printf("%d\r\n",EPD_7IN5_V2_WIDTH);
+    printf("%d\r\n",EPD_7IN5_V2_HEIGHT);
 
     printf("Drawing:BlackImage\r\n");
     Paint_DrawPoint(10, 80, BLACK, DOT_PIXEL_1X1, DOT_STYLE_DFT);
