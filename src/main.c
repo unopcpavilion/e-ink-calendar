@@ -64,12 +64,7 @@ int drawWindow(void){
     Paint_NewImage(BlackImage, EPD_7IN5_V2_WIDTH, EPD_7IN5_V2_HEIGHT, 0, WHITE);
 
 
-    printf("show image for array\r\n");
-    Paint_SelectImage(BlackImage);
-    Paint_Clear(WHITE);
-    Paint_DrawBitMap(gImage_7in5_V2);
-    EPD_7IN5_V2_Display(BlackImage);
-    DEV_Delay_ms(2000);
+
 
     // 1.Select Image
     printf("SelectImage:BlackImage\r\n");
@@ -97,6 +92,9 @@ int drawWindow(void){
     Paint_DrawNum(10, 33, 123456789, &Font12, BLACK, WHITE);
     Paint_DrawNum(10, 50, 987654321, &Font16, WHITE, BLACK);
 
+    printf("EPD_Display\r\n");
+    EPD_7IN5_V2_Display(BlackImage);
+    DEV_Delay_ms(2000);
 
 //    printf("Clear...\r\n");
 //    EPD_7IN5_V2_Clear();
