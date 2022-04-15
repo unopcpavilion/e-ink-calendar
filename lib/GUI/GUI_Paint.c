@@ -315,6 +315,8 @@ void Paint_DrawPoint(UWORD Xpoint, UWORD Ypoint, UWORD Color,
 {
     if (Xpoint > Paint.Width || Ypoint > Paint.Height) {
         Debug("Paint_DrawPoint Input exceeds the normal display range\r\n");
+        Debug(Paint.Width);
+        Debug(Paint.Height);
         return;
     }
 
