@@ -66,7 +66,7 @@ int drawWindow(void){
     // 1.Select Image
     printf("SelectImage:BlackImage\r\n");
     Paint_SelectImage(BlackImage);
-    Paint_Clear(WHITE);
+    //Paint_Clear(WHITE);
 
     // 2.Drawing on the image
     printf("%d\r\n",EPD_7IN5_V2_WIDTH);
