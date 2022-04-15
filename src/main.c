@@ -67,7 +67,7 @@ int drawWindow(void){
     printf("SelectImage:BlackImage\r\n");
     Paint_SelectImage(BlackImage);
     //Paint_Clear(WHITE);
-
+    DEV_Delay_ms(2000);//important, at least 2s
     // 2.Drawing on the image
     printf("%d\r\n",EPD_7IN5_V2_WIDTH);
     printf("%d\r\n",EPD_7IN5_V2_HEIGHT);
