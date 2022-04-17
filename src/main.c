@@ -64,7 +64,7 @@ int drawWindow(UBYTE *BlackImage){
         printf("show window BMP-----------------\r\n");
         Paint_SelectImage(BlackImage);
         Paint_Clear(WHITE);
-        GUI_ReadBmp("./pic/desktop_plain.bmp", 0, 0);
+        GUI_ReadBmp("../../SystemSix/out.bmp", 0, 0);
         EPD_7IN5_V2_Display(BlackImage);
         printf("Goto Sleep...\r\n");
         EPD_7IN5_V2_Sleep();
