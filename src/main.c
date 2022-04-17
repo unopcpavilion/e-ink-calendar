@@ -69,6 +69,6 @@ int drawWindow(UBYTE *BlackImage){
         printf("Goto Sleep...\r\n");
         EPD_7IN5_V2_Sleep();
         DEV_Delay_ms(60000);
-        EPD_7IN5_V2_Init
+        EPD_7IN5_V2_Init();
     }
 }
