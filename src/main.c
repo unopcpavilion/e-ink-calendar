@@ -5,7 +5,7 @@
 #include "EPD_7in5_V2.h"
 #include <time.h>
 
-int drawWindow(void);
+void drawWindow(UBYTE *BlackImage);
 
 void  Handler(int signo)
 {
@@ -59,7 +59,7 @@ int main(void)
     return 0;
 }
 
-int drawWindow(UBYTE *BlackImage){
+void drawWindow(UBYTE *BlackImage){
     while(1) {
         printf("show window BMP-----------------\r\n");
         Paint_SelectImage(BlackImage);
